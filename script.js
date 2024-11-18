@@ -56,6 +56,12 @@ function playGame() {
 
     playRound(humanSelection, computerSelection);
   }
+
+  if (humanScore > computerScore) {
+    console.log("you win");
+  } else if (computerScore > humanScore) {
+    console.log("you lose");
+  } else console.log("you tied");
 }
 
 playGame();
